@@ -278,6 +278,10 @@ ul {
 
 .home .home-info {
     flex: 0 0 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
 }
 
 h3.hello {
