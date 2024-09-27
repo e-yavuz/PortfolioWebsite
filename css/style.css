@@ -686,10 +686,10 @@ p.timeline-text {
 }
 
 .contact .contact-info-item {
-    max-width: 100%;
     text-align: center;
     margin-bottom: 20px;
     padding: 0 15px;
+    min-width: 250px;
 }
 
 /* @media (min-width: 768px) {
