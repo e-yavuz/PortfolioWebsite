@@ -75,3 +75,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 /* ============================== End of "Read More" Project Button ============================ */
+
+/* ============================== "Read More" Experience Button ============================ */
+document.addEventListener('DOMContentLoaded', function() {
+    const info = document.querySelectorAll('.experience .experience-content .timeline .timeline-info');
+
+    info.forEach(container => {
+        const text_container = container.querySelector('.timeline-text-container');
+        const text = container.querySelector('.timeline-text-container .timeline-text');
+        const ellipsis = container.querySelector('.ellipsis');
+        const readMoreBtn = container.querySelector('.read-more-btn');
+
+        if (text.scrollHeight > text_container.clientHeight) {
+            readMoreBtn.style.display = 'flex'; // Show the button if text overflows
+            ellipsis.style.display = 'flex'; // Show the ellipsis if text
+        }
+
+        readMoreBtn.addEventListener('click', function() {
+            text_container.classList.toggle('expanded');
+            if (text_container.classList.contains('expanded')) {
+                readMoreBtn.textContent = 'Read Less';
+                ellipsis.style.display = 'none'; // Hides ellipsis if text is expanded
+            } else {
+                readMoreBtn.textContent = 'Read More';
+                ellipsis.style.display = 'flex'; // Re-shows ellipsis if text is collapsed
+            }
+        });
+    });
+});
+/* ============================== End of "Read More" Experience Button ============================ */
