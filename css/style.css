@@ -684,7 +684,7 @@ p.timeline-text {
 }
 
 .portfolio .portfolio-item {
-    flex: 0 0 33.33%;
+    min-width: 300px;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
