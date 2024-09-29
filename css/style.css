@@ -600,7 +600,9 @@ h4.job-title {
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 15px;
-    max-width: 100%;
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
     color: var(--text-black-900);
 }
 
