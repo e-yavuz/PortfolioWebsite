@@ -549,7 +549,8 @@ h4.job-title {
 }
 
 .experience .experience-content .timeline .timeline-info .timeline-text-container {
-    max-height: 75px; /* Adjust this value based on the number of lines you want to show */
+    max-height: 75px;
+    /* Adjust this value based on the number of lines you want to show */
     overflow: hidden;
 }
 
@@ -574,7 +575,8 @@ h4.job-title {
 .project .project-item {
     margin-bottom: 30px;
     min-width: 350px;
-    max-width: 33%; /* Replace 33.33% with 300px */
+    max-width: 33%;
+    /* Replace 33.33% with 300px */
 }
 
 .project .project-item .project-item-inner .project-info {
@@ -585,7 +587,8 @@ h4.job-title {
 }
 
 .project .project-item .project-item-inner .project-info .project-text-container {
-    max-height: 75px; /* Adjust this value based on the number of lines you want to show */
+    max-height: 75px;
+    /* Adjust this value based on the number of lines you want to show */
     overflow: hidden;
 }
 
@@ -597,6 +600,7 @@ h4.job-title {
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 15px;
+    max-width: 100%;
     color: var(--text-black-900);
 }
 
@@ -810,14 +814,16 @@ h4.job-title {
     background-color: var(--bg-black-100);
     color: var(--read-more-btn);
     border: none;
-    margin-top: 10px; /* Add some space above the button */
+    margin-top: 10px;
+    /* Add some space above the button */
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    display: none; /* Initially hide the button */
+    display: none;
+    /* Initially hide the button */
 }
 
 .ellipsis {
